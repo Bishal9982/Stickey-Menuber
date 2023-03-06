@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky menu ber</title>
+    <style>
+      body {
+        margin: 0px;
+        /* padding: 10px 10px; */
+      }
+      #container {
+        text-align: center;
+      }
+
+      #header {
+        text-align: left;
+      }
+      #logo {
+        height: 200px;
+        width: 150px;
+        justify-content: left;
+      }
+      #header {
+        justify-content: center;
+        align-items: center;
+      }
+      #menu-ber {
+        background-color: cadetblue;
+        justify-content: center;
+        align-items: center;
+        /* display: flex; */
+        font-size: 25px;
+        font-weight: bold;
+        color: antiquewhite;
+      }
+      #menu-ber li {
+        list-style: none;
+        align-items: center;
+        display: inline-block;
+        padding: 10px;
+      }
+      #about-img {
+        height: 800px;
+        width: 1200px;
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      p {
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" class="sticky">
+      <img
+        src="—Pngtree—an artistic letter b_4876365.png"
+        id="logo"
+        alt="B-logo"
+        srcset=""
+      />
+    </div>
+    <nav id="menu-ber">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Clients</li>
+        <li>Team</li>
+        <li>About Us</li>
+      </ul>
+    </nav>
+    <div id="container">
+      <h1>About This Web page</h1>
+      <img
+        src="pexels-george-desipris-889545.jpg"
+        id="about-img"
+        alt="picture"
+        srcset=""
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+        consectetur libero eum voluptatum sapiente perferendis fugiat voluptatem
+        maxime quasi, odit, dolorum nostrum, quos atque soluta iure nam quia!
+        Aspernatur officia architecto itaque accusantium iusto, ad
+        necessitatibus nisi eius, assumenda magnam illum fugit cupiditate odit
+        laborum ipsam libero error veniam consectetur facere ea totam?
+        Laudantium impedit illo facilis ad minus dignissimos beatae labore
+        voluptatum accusamus. Explicabo voluptatibus officiis dolores enim, nemo
+        molestiae magnam, perferendis molestias modi illo provident repellat.
+        Assumenda dolorem dolore veniam deserunt repellendus accusantium
+        provident blanditiis praesentium odit quibusdam suscipit voluptatibus
+        at, facere nam hic error eos. Suscipit deleniti mollitia corporis
+        officiis molestiae sed est accusantium impedit sit totam unde, dolores
+        ullam. Quidem non id tempore vitae dicta odio aperiam totam provident,
+        ipsa enim unde ea, fugiat vero laborum eum quaerat nihil ratione aliquam
+        quos quibusdam doloremque reiciendis delectus? Temporibus quibusdam ad
+        totam deserunt ea? Id voluptas eius temporibus suscipit rerum in sequi
+        eum, debitis accusantium deleniti. Rem obcaecati atque nostrum
+        perferendis ipsam a accusantium eius impedit similique sapiente! Autem
+        non nostrum voluptate accusamus quasi rerum dolore quis commodi saepe
+        sint, sit nisi deleniti animi quisquam neque, porro blanditiis? Unde
+        nesciunt et doloribus debitis natus facilis voluptates laudantium quo,
+        tempore reiciendis ipsam non sapiente alias provident nulla facere error
+        nam fugiat in exercitationem vitae ullam. Error nobis quod atque, culpa
+        repellat molestias tenetur et voluptatum sit molestiae necessitatibus
+        reprehenderit delectus eum officiis! Ipsam provident tempora ipsa.
+        Sapiente quas quod et maxime in consequatur atque animi accusamus natus
+        ipsum reiciendis aliquid labore illo, illum excepturi rerum ducimus
+        doloremque, veniam inventore! Maxime odio id ab ad culpa, in incidunt
+        amet, harum tempora voluptatem nisi rem ut cumque consectetur.
+        Cupiditate, accusamus deleniti expedita laborum aut quam, distinctio
+        fuga minima laboriosam quo pariatur velit eligendi sequi corporis illum
+        doloremque ipsum, nobis perspiciatis aliquam
+      </p>
+    </div>
+  </body>
+  <script>
+    window.addEventListener("scroll", function () {
+      let navber = document.getElementById("menu-ber");
+      if (window.pageYOffset >= 204) {
+        navber.classList.add("sticky");
+      } else {
+        navber.classList.remove("sticky");
+      }
+    });
+  </script>
+</html>
